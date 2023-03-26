@@ -7,8 +7,8 @@
 const complimentBtn = document.getElementById("complimentButton")
 
 
-const getCompliment = () => {
-    axios.get("http://localhost:4000/api/compliment/")
+const getRandCompliment = () => {
+    axios.get("http://localhost:4000/api/randCompliment/")
         .then(res => {
             const data = res.data;
             alert(data);
@@ -18,7 +18,7 @@ const getCompliment = () => {
     })
 };
 
-complimentBtn.addEventListener('click', getCompliment)
+complimentBtn.addEventListener('click', getRandCompliment)
 
 //Step 1:
 const fortuneBtn = document.querySelector('#fortuneButton')
