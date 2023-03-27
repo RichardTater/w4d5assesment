@@ -7,7 +7,15 @@ app.use(cors());
 
 app.use(express.json());
 
-const { getRandCompliment, getFortune, addCompliment, deleteCompliment, getAllCompliments, getSingleCompliment, updateCompliment } = require('./controller')
+const { 
+    getRandCompliment, 
+    addCompliment, 
+    deleteCompliment, 
+    getAllCompliments, 
+    getSingleCompliment, 
+    updateCompliment, 
+    getFortune 
+} = require('./controller')
 
 app.get("/api/compliments/random", getRandCompliment);
 app.get("/api/compliments", getAllCompliments);

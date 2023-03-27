@@ -4,8 +4,27 @@
     <title>Back End Assessment</title>
   </head>
   <body class="container">
-    <button id="complimentButton">Get a Compliment</button>
-    <button id="fortuneButton">Get Fortune</button>
+    <button id="getRandCompliment">Get a Random Compliment</button>
+
+    <input type="number" id="getSingleComplimentNum" placeholder="What number compliment do you want?">
+    <button id="getSingleComplimentBtn">Get Single Compliment</button>
+
+    <input type="text" id="addComplimentStr" placeholder="Type your compliment here!">
+    <button id="addComplimentBtn">Add Compliment</button>
+
+    <input type="number" id="deleteComplimentNum" placeholder="What number compliment do you want to delete?">
+    <button id="deleteComplimentBtn">Delete Compliment</button>
+
+    <input type="text" id="updateComplimentStr" placeholder="Type your compliment here!">
+    <input type="number" id="updateComplimentNum" placeholder="What number compliment do you want to delete?">
+    <button id="updateComplimentBtn">Update Compliment</button>
+
+    <ol id="complimentsList"></ol>
+    
+    <button id="fortuneButton">Get a Random Fortune</button>
+    
+
+
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="main.js"></script>
